@@ -1,0 +1,13 @@
+// add snippets to build.gradle in parent project for ORM sage
+
+plugins {
+	...
+	id "io.ebean" version "13.6.0"
+	...
+}	
+
+subprojects {
+	...
+	apply plugin: 'io.ebean'
+	…
+}
